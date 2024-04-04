@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './index.module.css';
 import Link from 'next/link';
-import { HomeIconSolid, SearchIconSolid } from '@Icons/Ui';
+import { HomeIconSolid, SearchIconOutline, SearchIconSolid } from '@Icons/Ui';
 
 function NavBar() {
   return (
@@ -17,7 +17,7 @@ function NavBar() {
           </li>
           <li className={style.li}>
             <Link className={style.link} href={'/search'}>
-              <SearchIconSolid width={24} height={24} fill='#fff' />
+              <SearchIconOutline width={24} height={24} fill='#fff' />
               <span className={style.span}>Search</span>
             </Link>
           </li>

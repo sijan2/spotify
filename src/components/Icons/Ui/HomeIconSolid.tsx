@@ -1,10 +1,6 @@
-import React, { SVGProps } from 'react';
+import { SVGProps } from 'react';
 
-interface HomeIconProps extends SVGProps<SVGSVGElement> {
-  // Define any additional props you want to pass
-}
-
-function HomeIconSolid({ ...props }: HomeIconProps) {
+function HomeIconSolid({ ...props }: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
