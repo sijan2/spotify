@@ -29,6 +29,9 @@ module.exports = {
       gridTemplateRows: {
         layout: '1fr auto',
       },
+      fontFamily: {
+        sp: ['var(--font-sptitle)'],
+      },
       colors: {
         brand: {
           100: '#121212',

@@ -18,6 +18,7 @@
       }
     ],
     "paths": {
+      "@Icons/*": ["./src/components/Icons/*"],
       "@ui/*": ["./src/components/ui/*"],
       "@/*": ["./src/*"]
     }
