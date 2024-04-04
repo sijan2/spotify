@@ -36,18 +36,20 @@ function NavBar() {
           <header className='gap-2 flex flex-col px-4 py-2'>
             <div className='flex flex-row items-center gap-2 text-white'>
               <div className='gap-1 flex items-center me-auto min-w-0'>
-                <Link className={style.link2} href={'/home'}>
+                <button className={style.link2}>
                   <span className={style.span}>
                     <LibraryIconSolid width={24} height={24} fill='#fff' />
                   </span>
                   Your Library
-                </Link>
+                </button>
               </div>
-              <span className='block p-2'>
-                <PlusIcon width={20} height={20} fill='#fff' />
+              <span className='block'>
+                <button className='p-2'>
+                  <PlusIcon width={16} height={16} fill='#fff' />
+                </button>
               </span>
               <button className='p-2'>
-                <RightArrowIcon width={20} height={20} fill='#fff' />
+                <RightArrowIcon width={16} height={16} fill='#fff' />
               </button>
             </div>
           </header>
