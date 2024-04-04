@@ -1,7 +1,13 @@
 import React from 'react';
 import style from './index.module.css';
 import Link from 'next/link';
-import { HomeIconSolid, SearchIconOutline, SearchIconSolid } from '@Icons/Ui';
+import {
+  HomeIconSolid,
+  LibraryIconSolid,
+  PlusIcon,
+  RightArrowIcon,
+  SearchIconOutline,
+} from '@Icons/Ui';
 
 function NavBar() {
   return (
@@ -24,7 +30,31 @@ function NavBar() {
         </ul>
       </div>
       {/* Library */}
-      <div className='w-full flex flex-1 flex-col bg-brand-100 h-full rounded-lg'></div>
+      <div className='w-full flex flex-1 flex-col bg-brand-100 h-full rounded-lg'>
+        <div>
+          {/* Button */}
+          <header className='gap-2 flex flex-col px-4 py-2'>
+            <div className='flex flex-row items-center gap-2 text-white'>
+              <div className='gap-1 flex items-center me-auto min-w-0'>
+                <Link className={style.link2} href={'/home'}>
+                  <span className={style.span}>
+                    <LibraryIconSolid width={24} height={24} fill='#fff' />
+                  </span>
+                  Your Library
+                </Link>
+              </div>
+              <span className='block p-2'>
+                <PlusIcon width={20} height={20} fill='#fff' />
+              </span>
+              <button className='p-2'>
+                <RightArrowIcon width={20} height={20} fill='#fff' />
+              </button>
+            </div>
+          </header>
+          {/* Chips */}
+          <div className='items-center flex'></div>
+        </div>
+      </div>
     </nav>
   );
 }

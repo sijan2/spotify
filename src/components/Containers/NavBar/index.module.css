@@ -40,7 +40,26 @@
    gap-5
    h-10;
 }
+.link2 {
+  overflow-wrap: anywhere;
+  border: 0;
+  min-block-size: 40px;
+  @apply relative py-1
+  px-2
+  flex
+  justify-start
+  cursor-pointer
+  flex-shrink-0
+  h-[40px]
+  whitespace-nowrap
+  items-center
+  font-bold;
+}
 .span {
-  @apply font-semibold
-  text-base;
+  @apply flex font-bold me-3;
+}
+
+.sty {
+  min-block-size: 40px @apply flex flex-row items-center h-10 cursor-pointer
+    py-1 px-2 shrink-0 justify-start max-w-full relative;
 }
