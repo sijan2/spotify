@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const circular = localFont({
   src: [
     {
-      path: '../../public/fonts/CircularSp-Book.woff2',
+      path: '../../public/fonts/CircularSpTitle-Black.woff2',
       weight: '400',
     },
   ],

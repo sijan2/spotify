@@ -1,8 +1,6 @@
 .container {
-  @apply h-full
-    gap-2
-    flex
-    flex-col;
+  unicode-bidi: isolate;
+  @apply h-full gap-2 flex flex-col min-h-0;
 }
 
 .home {

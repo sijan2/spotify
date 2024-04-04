@@ -2,10 +2,10 @@ import NavBar from '@/components/Containers/NavBar';
 
 export default function Home() {
   return (
-    <main className='h-full w-full relative'>
+    <main className='h-full w-full relative isolate z-0'>
       <div className=' bg-black relative h-full w-full min-h-full grid grid-areas-layout grid-cols-layout grid-rows-layout gap-2 p-2'>
         {/* Left Side Bar */}
-        <div className='flex flex-col  grid-in-left-sidebar h-auto  min-w-[72px] w-[420px] min-h-0 relative z-[4]'>
+        <div className='flex flex-col  grid-in-left-sidebar w-[420px] min-h-0 relative z-[4]'>
           {/* side-bar */}
           <NavBar />
           {/* resize-sidebar */}
