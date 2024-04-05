@@ -112,93 +112,6 @@ html {
   display: block;
 }
 
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
 @layer base {
   * {
     @apply border-border;
@@ -209,9 +122,24 @@ video {
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
+  border: 0;
   margin: 0;
-  font-family: var(--font-spcircle), 'Roboto', Arial;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: var(--font-spcircle), var(--font-sptitle), 'Roboto', Arial;
   user-select: none;
+}
+
+@layer components {
+  .hovericon {
+    @apply transition
+    ease-in-out
+    delay-150 group-hover:fill-white duration-300;
+  }
+  .hoverscaleicon {
+    @apply transition
+    ease-in-out
+    delay-150 group-hover:fill-white  group-hover:scale-105 duration-300;
+  }
 }

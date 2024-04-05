@@ -33,6 +33,7 @@ module.exports = {
       },
       fontFamily: {
         spbold: ['var(--font-spcircle)'],
+        sptitle: ['var(--font-sptitle)'],
       },
       colors: {
         brand: {

@@ -18,3 +18,19 @@ export const CIRCULAR_SP = localFont({
   ],
   variable: '--font-spcircle',
 });
+
+export const CIRCULAR_SP_TITLE = localFont({
+  src: [
+    {
+      path: '../../public/fonts/CircularSp-Book.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/CircularSp-Book.woff2',
+      weight: '700',
+      style: 'bold',
+    },
+  ],
+  variable: '--font-sptitle',
+});

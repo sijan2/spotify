@@ -34,11 +34,15 @@ function NavBar() {
         <div>
           {/* Button */}
           <header className='gap-2 flex flex-col px-4 py-2'>
-            <div className='flex flex-row items-center gap-2 '>
+            <div className='flex flex-row items-center gap-2'>
               <div className='gap-1 flex items-center me-auto min-w-0'>
-                <button className={style.link2}>
+                <button className={`${style.link2} group`}>
                   <span className={style.span}>
-                    <LibraryIconSolid width={24} height={24} fill='#a7a7a7' />
+                    <LibraryIconSolid
+                      className='hovericon fill-[#a7a7a7]'
+                      width={24}
+                      height={24}
+                    />
                   </span>
                   Your Library
                 </button>

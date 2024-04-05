@@ -46,15 +46,17 @@
   @apply relative py-1
   px-2
   flex
-
   justify-start
   cursor-pointer
   flex-shrink-0
   h-[40px]
   whitespace-nowrap
   items-center
+  transition
+  ease-in-out
+  delay-150
   text-[#a7a7a7]
-  hover:text-white;
+  hover:text-white duration-300;
 }
 .span {
   @apply flex me-3;
