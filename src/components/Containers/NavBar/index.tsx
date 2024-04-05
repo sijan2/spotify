@@ -45,11 +45,11 @@ function NavBar() {
               </div>
               <span className='block'>
                 <button className='p-2'>
-                  <PlusIcon width={16} height={16} fill='#fff' />
+                  <PlusIcon width={16} height={16} fill='#a7a7a7' />
                 </button>
               </span>
               <button className='p-2'>
-                <RightArrowIcon width={16} height={16} fill='#fff' />
+                <RightArrowIcon width={16} height={16} fill='#a7a7a7' />
               </button>
             </div>
           </header>

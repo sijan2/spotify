@@ -21,9 +21,7 @@ export default function Home() {
           </footer>
         </div>
         {/* Main */}
-        <div className=' grid-in-main-view row-span-2 flex flex-col bg-brand-100 relative overflow-hidden w-full rounded-lg '>
-          02
-        </div>
+        <div className=' grid-in-main-view row-span-2 flex flex-col bg-brand-100 relative overflow-hidden w-full rounded-lg '></div>
       </div>
     </main>
   );
