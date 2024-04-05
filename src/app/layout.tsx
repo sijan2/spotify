@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
 import '@/styles/globals.css';
+import clsx from 'clsx';
+import { CIRCULAR_SP_TITLE } from '@./next.fonts';
 
 export const metadata: Metadata = {
   title: 'Spotify',
@@ -8,16 +9,7 @@ export const metadata: Metadata = {
   icons: '/logo.png',
 };
 
-const circular = localFont({
-  src: [
-    {
-      path: '../../public/fonts/CircularSpTitle-Black.woff2',
-      weight: '400',
-    },
-  ],
-  display: 'swap',
-  variable: '--font-sptitle',
-});
+const fontClasses = clsx(CIRCULAR_SP_TITLE.variable);
 
 export default function RootLayout({
   children,
@@ -25,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className={`${circular.variable} font-sans`}>
+    <html lang='en' className={fontClasses}>
       <body>{children}</body>
     </html>
   );

@@ -23,7 +23,7 @@ function NavBar() {
           </li>
           <li className={style.li}>
             <Link className={style.link} href={'/search'}>
-              <SearchIconOutline width={24} height={24} fill='#fff' />
+              <SearchIconOutline width={24} height={24} fill='#b3b3b3' />
               <span className={style.span}>Search</span>
             </Link>
           </li>
@@ -34,11 +34,11 @@ function NavBar() {
         <div>
           {/* Button */}
           <header className='gap-2 flex flex-col px-4 py-2'>
-            <div className='flex flex-row items-center gap-2 text-white'>
+            <div className='flex flex-row items-center gap-2 '>
               <div className='gap-1 flex items-center me-auto min-w-0'>
                 <button className={style.link2}>
                   <span className={style.span}>
-                    <LibraryIconSolid width={24} height={24} fill='#fff' />
+                    <LibraryIconSolid width={24} height={24} fill='#a7a7a7' />
                   </span>
                   Your Library
                 </button>

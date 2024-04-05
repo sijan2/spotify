@@ -18,8 +18,7 @@
 .ul {
   @apply px-3
     py-2
-    list-none
-    text-white;
+    list-none;
 }
 
 .li {
@@ -36,7 +35,9 @@
    flex-row
    items-center
    gap-5
-   h-10;
+   h-10
+   text-[#b3b3b3]
+   hover:text-white;
 }
 .link2 {
   overflow-wrap: anywhere;
@@ -45,19 +46,16 @@
   @apply relative py-1
   px-2
   flex
+
   justify-start
   cursor-pointer
   flex-shrink-0
   h-[40px]
   whitespace-nowrap
   items-center
-  font-bold;
+  text-[#a7a7a7]
+  hover:text-white;
 }
 .span {
-  @apply flex font-bold me-3;
-}
-
-.sty {
-  min-block-size: 40px @apply flex flex-row items-center h-10 cursor-pointer
-    py-1 px-2 shrink-0 justify-start max-w-full relative;
+  @apply flex me-3;
 }

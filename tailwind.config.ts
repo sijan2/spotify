@@ -1,4 +1,6 @@
+import { Config } from 'tailwindcss';
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   darkMode: ['class'],
   content: [
@@ -95,4 +97,4 @@ module.exports = {
     require('tailwindcss-animate'),
     require('@savvywombat/tailwindcss-grid-areas'),
   ],
-};
+} satisfies Config;
