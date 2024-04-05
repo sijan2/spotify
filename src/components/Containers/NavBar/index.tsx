@@ -7,7 +7,7 @@ import {
   PlusIcon,
   RightArrowIcon,
   SearchIconOutline,
-} from '@Icons/Ui';
+} from '@/components/Icons';
 
 function NavBar() {
   return (

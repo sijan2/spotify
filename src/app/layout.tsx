@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.css';
 import clsx from 'clsx';
-import { CIRCULAR_SP_TITLE } from '@./next.fonts';
+import { CIRCULAR_SP } from '@/config/next.fonts';
 
 export const metadata: Metadata = {
   title: 'Spotify',
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   icons: '/logo.png',
 };
 
-const fontClasses = clsx(CIRCULAR_SP_TITLE.variable);
+const fontClasses = clsx(CIRCULAR_SP.variable);
 
 export default function RootLayout({
   children,

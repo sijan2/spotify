@@ -1,6 +1,6 @@
 .container {
   unicode-bidi: isolate;
-  @apply h-full gap-2 flex flex-col min-h-0;
+  @apply h-full gap-2 flex flex-col min-h-0 font-bold;
 }
 
 .home {

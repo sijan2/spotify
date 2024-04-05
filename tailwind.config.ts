@@ -32,7 +32,7 @@ module.exports = {
         layout: '1fr auto',
       },
       fontFamily: {
-        sp: ['var(--font-sptitle)'],
+        spbold: ['var(--font-spcircle)'],
       },
       colors: {
         brand: {
