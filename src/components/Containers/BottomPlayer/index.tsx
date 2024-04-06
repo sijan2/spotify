@@ -24,7 +24,7 @@ function BottomPlayer() {
               <span className='text-sm text-white'>Photograph</span>
               <span className='text-xs text-[#a7a7a7]'>Ed Sheeran</span>
             </div>
-            <button className='group cursor-pointer active:animate-wiggle'>
+            <button className='group cursor-pointer active:animate-shake'>
               <HeartIcon
                 className='hoverscaleicon fill-[#a7a7a7] '
                 width={16}

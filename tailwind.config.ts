@@ -88,19 +88,19 @@ module.exports = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
-        wiggle: {
-          '0%': { transform: 'rotate(0deg)' },
-          '20%': { transform: 'rotate(-60deg)' },
-          '40%': { transform: 'rotate(60deg)' },
-          '60%': { transform: 'rotate(-60deg)' },
-          '80%': { transform: 'rotate(60deg)' },
-          '100%': { transform: 'rotate(0deg)' },
+        shake: {
+          '10%, 90%': { transform: 'translate3d(-1px, 0, 0) rotate(-10deg)' },
+          '20%, 80%': { transform: 'translate3d(2px, 0, 0) rotate(10deg)' },
+          '30%, 50%, 70%': {
+            transform: 'translate3d(-4px, 0, 0) rotate(-10deg)',
+          },
+          '40%, 60%': { transform: 'translate3d(4px, 0, 0) rotate(10deg)' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        wiggle: 'wiggle 0.5s linear',
+        shake: 'shake 0.82s cubic-bezier(.36,.07,.19,.97) both',
       },
     },
   },
