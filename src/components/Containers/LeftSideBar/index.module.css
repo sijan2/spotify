@@ -36,8 +36,11 @@
    items-center
    gap-5
    h-10
+   transition
+   ease-in-out
+   delay-150
    text-[#b3b3b3]
-   hover:text-white;
+   hover:text-white duration-300;
 }
 .link2 {
   overflow-wrap: anywhere;

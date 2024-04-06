@@ -1,4 +1,4 @@
-import HeartIcon from '@/components/Icons/HeartIcon';
+import { HeartIcon } from '@/components/Icons';
 import Image from 'next/image';
 import React from 'react';
 
@@ -24,7 +24,7 @@ function BottomPlayer() {
               <span className='text-sm text-white'>Photograph</span>
               <span className='text-xs text-[#a7a7a7]'>Ed Sheeran</span>
             </div>
-            <button className='group cursor-pointer'>
+            <button className='group cursor-pointer active:animate-wiggle'>
               <HeartIcon
                 className='hoverscaleicon fill-[#a7a7a7] '
                 width={16}
@@ -36,7 +36,7 @@ function BottomPlayer() {
           <div className='p-1'></div>
         </div>
         {/* devices */}
-        <div className=' bg-[#1ed760] rounded h-6 py-1 relative pe-[73.5px]'></div>
+        <div className='hidden bg-[#1ed760] rounded h-6 py-1 relative pe-[73.5px]'></div>
       </footer>
     </div>
   );

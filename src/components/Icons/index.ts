@@ -21,3 +21,5 @@ export { default as DeviceIcon } from './DeviceIcon';
 export { default as VolumeIcon } from './VolumeIcon';
 export { default as MinimizeIcon } from './MinimizeIcon';
 export { default as FullscreenIcon } from './FullscreenIcon';
+export { default as HeartIcon } from './HeartIcon';
+export { default as HeartIconSolid } from './HeartIconSolid';
