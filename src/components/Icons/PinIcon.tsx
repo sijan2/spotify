@@ -3,12 +3,12 @@ import React, { SVGProps } from 'react';
 function PinIcon({ ...props }: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      {...props}
       data-encore-id='icon'
       role='img'
-      aria-hidden='false'
-      className='Svg-sc-ytk21e-0 kLkTcI G7aCptcOZswI1fN6dGkO'
+      aria-hidden='true'
       viewBox='0 0 16 16'
+      xmlns='http://www.w3.org/2000/svg'
+      {...props}
       fill='#1ed760'
     >
       <title>Pinned</title>
