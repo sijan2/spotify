@@ -48,12 +48,22 @@ function NavBar() {
                 </button>
               </div>
               <span className='block'>
-                <button className='p-2'>
-                  <PlusIcon width={16} height={16} fill='#a7a7a7' />
+                <button className='p-2 hover:bg-brand-200 hover:rounded-full group'>
+                  <PlusIcon
+                    className='hovericon'
+                    width={16}
+                    height={16}
+                    fill='#a7a7a7'
+                  />
                 </button>
               </span>
-              <button className='p-2'>
-                <RightArrowIcon width={16} height={16} fill='#a7a7a7' />
+              <button className='p-2 hover:bg-brand-200 hover:rounded-full group'>
+                <RightArrowIcon
+                  className='hovericon'
+                  width={16}
+                  height={16}
+                  fill='#a7a7a7'
+                />
               </button>
             </div>
           </header>

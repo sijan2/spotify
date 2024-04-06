@@ -1,5 +1,4 @@
 import HeartIcon from '@/components/Icons/HeartIcon';
-import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import React from 'react';
 
@@ -37,7 +36,7 @@ function BottomPlayer() {
           <div className='p-1'></div>
         </div>
         {/* devices */}
-        <div className='hidden bg-[#1ed760] rounded h-7 py-1 relative pe-[73.5px]'></div>
+        <div className=' bg-[#1ed760] rounded h-6 py-1 relative pe-[73.5px]'></div>
       </footer>
     </div>
   );
