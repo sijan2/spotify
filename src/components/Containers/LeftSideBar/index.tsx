@@ -21,7 +21,7 @@ function NavBar() {
       <div className={style.home}>
         <ul className={style.ul}>
           <li className={style.li}>
-            <Link className={style.link} href={'/'}>
+            <Link className={`${style.link} group`} href={'/'}>
               {path === '/' ? (
                 <>
                   <HomeIconSolid width={24} height={24} fill='#fff' />
