@@ -16,6 +16,8 @@ import {
   ShuffleIcon,
   VolumeIcon,
 } from '@/components/Icons';
+import ThreeStateButton from '@/components/button/ThreeStateButton';
+import TwoStateButton from '@/components/button/TwoStateButton';
 
 import Image from 'next/image';
 import React, { useState } from 'react';
@@ -72,13 +74,7 @@ function BottomPlayer() {
             <div className='flex flex-col justify-center items-center'>
               <div className='flex flex-row flex-nowrap w-full gap-4 mb-2'>
                 <div className='flex flex-row justify-end flex-1 gap-2 size-[32px]'>
-                  <button className='group flex size-[32px] justify-center items-center cursor-pointer relative '>
-                    <ShuffleIcon
-                      className='hoverscaleicon fill-[#a7a7a7]'
-                      width={16}
-                      height={16}
-                    />
-                  </button>
+                  <TwoStateButton />
                   <button className='group flex size-[32px] justify-center items-center cursor-pointer relative'>
                     <PreviousSongIcon
                       className='hoverscaleicon fill-[#a7a7a7] '
@@ -107,13 +103,7 @@ function BottomPlayer() {
                       height={16}
                     />
                   </button>
-                  <button className='group flex size-[32px] justify-center items-center cursor-pointer relative'>
-                    <RepeatIcon
-                      className='hoverscaleicon fill-[#a7a7a7] '
-                      width={16}
-                      height={16}
-                    />
-                  </button>
+                  <ThreeStateButton />
                 </div>
               </div>
               {/* slider */}
