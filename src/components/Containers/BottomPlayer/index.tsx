@@ -8,6 +8,7 @@ import {
   MinimizeIcon,
   NextSongIcon,
   NowPlayingIcon,
+  PauseIcon,
   PlayIcon,
   PreviousSongIcon,
   QueueIcon,
@@ -15,13 +16,14 @@ import {
   ShuffleIcon,
   VolumeIcon,
 } from '@/components/Icons';
-import { Slider } from '@ui/slider';
 
 import Image from 'next/image';
 import React, { useState } from 'react';
 
 function BottomPlayer() {
   const [clicked, setClicked] = useState(false);
+  const [play, setPlay] = useState(false);
+
   return (
     <div className='grid-in-now-playing-bar flex flex-col w-full z-[6]'>
       <footer className='flex flex-col h-auto min-w-[620px]'>
@@ -85,8 +87,17 @@ function BottomPlayer() {
                     />
                   </button>
                 </div>
-                <button className='bg-white rounded-[32px] flex size-[32px] justify-center items-center cursor-pointer relative hover:scale-105'>
-                  <PlayIcon className='fill-black ' width={16} height={16} />
+                <button
+                  onClick={() => {
+                    setPlay(!play);
+                  }}
+                  className='bg-white rounded-[32px] flex size-[32px] justify-center items-center cursor-pointer relative hover:scale-105'
+                >
+                  {play === false ? (
+                    <PlayIcon className='fill-black ' width={16} height={16} />
+                  ) : (
+                    <PauseIcon className='fill-black ' width={16} height={16} />
+                  )}
                 </button>
                 <div className='flex flex-row justify-start flex-1 gap-2 size-[32px] '>
                   <button className='group flex size-[32px] justify-center items-center cursor-pointer relative '>
@@ -106,9 +117,7 @@ function BottomPlayer() {
                 </div>
               </div>
               {/* slider */}
-              <div>
-                {/* <Slider defaultValue={[33]} max={100} step={1} /> */}
-              </div>
+              <div></div>
             </div>
             <div className='p-1'></div>
           </div>

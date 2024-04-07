@@ -12,6 +12,7 @@ export { default as FilterIcon } from './FilterIcon';
 export { default as ShuffleIcon } from './ShuffleIcon';
 export { default as PreviousSongIcon } from './PreviousSongIcon';
 export { default as PlayIcon } from './PlayIcon';
+export { default as PauseIcon } from './PauseIcon';
 export { default as NextSongIcon } from './NextSongIcon';
 export { default as RepeatIcon } from './RepeatIcon';
 export { default as RepeatOneIcon } from './RepeatOneIcon';
