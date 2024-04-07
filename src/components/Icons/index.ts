@@ -17,6 +17,7 @@ export { default as RepeatIcon } from './RepeatIcon';
 export { default as RepeatOneIcon } from './RepeatOneIcon';
 export { default as NowPlayingIcon } from './NowPlayingIcon';
 export { default as QueueIcon } from './QueueIcon';
+export { default as LyricsIcon } from './LyricsIcon';
 export { default as DeviceIcon } from './DeviceIcon';
 export { default as VolumeIcon } from './VolumeIcon';
 export { default as MinimizeIcon } from './MinimizeIcon';
