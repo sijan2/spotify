@@ -114,4 +114,9 @@ html {
     ease-in-out
     delay-150 group-hover:fill-white  group-hover:scale-105 duration-300;
   }
+  .hoverscale {
+    @apply transition
+    ease-in-out
+    delay-150 hover:fill-white  hover:scale-105 duration-300;
+  }
 }

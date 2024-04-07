@@ -5,7 +5,7 @@ import React from 'react';
 function Login() {
   return (
     <div className='min-h-screen text-white bg-brand-100 flex flex-col items-center justify-center'>
-      <SpotifyLogo width={300} height={96} fill='#1ed760' />
+      <SpotifyLogo width={300} height={96} fill='#f3f' />
     </div>
   );
 }
