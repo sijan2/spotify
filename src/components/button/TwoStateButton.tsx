@@ -1,8 +1,11 @@
 'use client';
-import { useState } from 'react';
-import { ShuffleIcon } from '../Icons';
+import { FC, SVGProps, useState } from 'react';
 
-const TwoStateButton = () => {
+interface TwoStateButtonProps {
+  Icon: FC<SVGProps<SVGSVGElement>>;
+}
+
+const TwoStateButton: FC<TwoStateButtonProps> = ({ Icon }) => {
   const [currentState, setCurrentState] = useState(true);
 
   const handleClick = () => {
@@ -14,13 +17,13 @@ const TwoStateButton = () => {
       className='group flex size-[32px] justify-center items-center cursor-pointer relative '
     >
       {currentState ? (
-        <ShuffleIcon
+        <Icon
           className='hoverscaleicon fill-[#a7a7a7] '
           width={16}
           height={16}
         />
       ) : (
-        <ShuffleIcon
+        <Icon
           className='hover:scale-105 fill-[#1db954] '
           width={16}
           height={16}

@@ -62,7 +62,7 @@ function BottomPlayer() {
                 />
               ) : (
                 <HeartIconSolid
-                  className='hover:scale-105 hover:fil-[#1ed760] fill-[#1ed760] '
+                  className='hover:scale-105 hover:fill-[#1ed760] fill-[#1ed760] '
                   width={16}
                   height={16}
                 />
@@ -74,7 +74,7 @@ function BottomPlayer() {
             <div className='flex flex-col justify-center items-center'>
               <div className='flex flex-row flex-nowrap w-full gap-4 mb-2'>
                 <div className='flex flex-row justify-end flex-1 gap-2 size-[32px]'>
-                  <TwoStateButton />
+                  <TwoStateButton Icon={ShuffleIcon} />
                   <button className='group flex size-[32px] justify-center items-center cursor-pointer relative'>
                     <PreviousSongIcon
                       className='hoverscaleicon fill-[#a7a7a7] '
@@ -113,55 +113,13 @@ function BottomPlayer() {
           </div>
           <div className='min-w-[180px] width-[30%] flex flex-row justify-end'>
             <div className='flex flex-grow justify-end items-center'>
-              <button className='group flex size-[32px] justify-center items-center cursor-pointer relative'>
-                <NowPlayingIcon
-                  className='hoverscaleicon fill-[#a7a7a7] '
-                  width={16}
-                  height={16}
-                />
-              </button>
-              <button className='group flex size-[32px] justify-center items-center cursor-pointer relative'>
-                <LyricsIcon
-                  className='hoverscaleicon fill-[#a7a7a7] '
-                  width={16}
-                  height={16}
-                />
-              </button>
-              <button className='group flex size-[32px] justify-center items-center cursor-pointer relative'>
-                <QueueIcon
-                  className='hoverscaleicon fill-[#a7a7a7] '
-                  width={16}
-                  height={16}
-                />
-              </button>
-              <button className='group flex size-[32px] justify-center items-center cursor-pointer relative'>
-                <DeviceIcon
-                  className='hoverscaleicon fill-[#a7a7a7] '
-                  width={16}
-                  height={16}
-                />
-              </button>
-              <button className='group flex size-[32px] justify-center items-center cursor-pointer relative'>
-                <VolumeIcon
-                  className='hoverscaleicon fill-[#a7a7a7] '
-                  width={16}
-                  height={16}
-                />
-              </button>
-              <button className='group flex size-[32px] justify-center items-center cursor-pointer relative'>
-                <MinimizeIcon
-                  className='hoverscaleicon fill-[#a7a7a7] '
-                  width={16}
-                  height={16}
-                />
-              </button>
-              <button className='group flex size-[32px] justify-center items-center cursor-pointer relative'>
-                <FullscreenIcon
-                  className='hoverscaleicon fill-[#a7a7a7] '
-                  width={16}
-                  height={16}
-                />
-              </button>
+              <TwoStateButton Icon={NowPlayingIcon} />
+              <TwoStateButton Icon={LyricsIcon} />
+              <TwoStateButton Icon={QueueIcon} />
+              <TwoStateButton Icon={DeviceIcon} />
+              <TwoStateButton Icon={VolumeIcon} />
+              <TwoStateButton Icon={MinimizeIcon} />
+              <TwoStateButton Icon={FullscreenIcon} />
             </div>
           </div>
         </div>
