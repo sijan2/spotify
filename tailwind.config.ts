@@ -39,6 +39,7 @@ module.exports = {
         brand: {
           100: '#121212',
           200: '#1a1a1a',
+          300: 'hsla(0,0%,100%,.3)',
         },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

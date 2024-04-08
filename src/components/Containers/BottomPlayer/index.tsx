@@ -12,12 +12,13 @@ import {
   PlayIcon,
   PreviousSongIcon,
   QueueIcon,
-  RepeatIcon,
   ShuffleIcon,
   VolumeIcon,
 } from '@/components/Icons';
 import ThreeStateButton from '@/components/button/ThreeStateButton';
 import TwoStateButton from '@/components/button/TwoStateButton';
+import Slider from '@ui/slider';
+import MusicProgressionBar from '@ui/slider';
 
 import Image from 'next/image';
 import React, { useState } from 'react';
@@ -107,9 +108,8 @@ function BottomPlayer() {
                 </div>
               </div>
               {/* slider */}
-              <div></div>
+              <Slider />
             </div>
-            <div className='p-1'></div>
           </div>
           <div className='min-w-[180px] width-[30%] flex flex-row justify-end'>
             <div className='flex flex-grow justify-end items-center'>
