@@ -18,7 +18,6 @@ import {
 import ThreeStateButton from '@/components/button/ThreeStateButton';
 import TwoStateButton from '@/components/button/TwoStateButton';
 import Slider from '@ui/slider';
-import MusicProgressionBar from '@ui/slider';
 
 import Image from 'next/image';
 import React, { useState } from 'react';
