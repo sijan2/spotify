@@ -18,6 +18,7 @@ import {
 import ThreeStateButton from '@/components/button/ThreeStateButton';
 import TwoStateButton from '@/components/button/TwoStateButton';
 import Slider from '@ui/slider';
+import VolumeSlider from '@ui/volume';
 
 import Image from 'next/image';
 import React, { useState } from 'react';
@@ -110,13 +111,16 @@ function BottomPlayer() {
               <Slider />
             </div>
           </div>
-          <div className='min-w-[180px] width-[30%] flex flex-row justify-end'>
+          <div className='min-w-[180px] width-[30%] flex flex-row justify-end '>
             <div className='flex flex-grow justify-end items-center'>
               <TwoStateButton Icon={NowPlayingIcon} />
               <TwoStateButton Icon={LyricsIcon} />
               <TwoStateButton Icon={QueueIcon} />
               <TwoStateButton Icon={DeviceIcon} />
-              <TwoStateButton Icon={VolumeIcon} />
+              <div className='mr-2 relative items-center flex flex-shrink w-[125px]'>
+                <TwoStateButton Icon={VolumeIcon} />
+                <VolumeSlider />
+              </div>
               <TwoStateButton Icon={MinimizeIcon} />
               <TwoStateButton Icon={FullscreenIcon} />
             </div>
