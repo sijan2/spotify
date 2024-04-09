@@ -11,9 +11,9 @@ const VolumeSlider = () => {
           <div className='rounded-[2px] h-1 w-full flex absolute top-[50%] translate-y-[-50%] bg-brand-300'>
             {/* slider foreground this should be on top of progress bar which transform on x axis upon draging on top  */}
             <div className='overflow-hidden w-full rounded-[2px] h-1'>
-              <div className='bg-green-500 rounded-[2px] h-1 w-full will-change-transform translate-x-[-70%]'></div>
+              <div className='bg-white rounded-[2px] h-1 w-full will-change-transform translate-x-[0%]'></div>
             </div>
-            <div className='cursor-pointer absolute bg-white  rounded-[50%] h-3 ml-[-6px] will-change-[left] z-[100] left-[30%] translate-y-[-50%] w-3 top-[50%] shadow-md'></div>
+            <div className=' hidden cursor-pointer absolute bg-white  rounded-[50%] h-3 ml-[-6px] will-change-[left] z-[100] left-[30%] translate-y-[-50%] w-3 top-[50%] shadow-md'></div>
           </div>
           {/* slider pointer */}
         </div>

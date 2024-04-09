@@ -33,10 +33,10 @@ function BottomPlayer() {
         {/* player */}
         <div className='h-[72px] bg-black flex flex-row items-center justify-between'>
           {/* like section */}
-          <div className='flex flex-row items-center justify-start relative mx-2'>
+          <div className='flex flex-row items-center justify-start relative mx-2 w-[30%] p-0'>
             <div>
               <Image
-                className='rounded-t-sm mb-1'
+                className='rounded-sm mb-1'
                 alt='song cover'
                 width={56}
                 height={56}
@@ -45,9 +45,13 @@ function BottomPlayer() {
                 }
               />
             </div>
-            <div className='flex flex-col mx-4 font-sptitle cursor-pointer'>
-              <span className='text-sm text-white'>Photograph</span>
-              <span className='text-xs text-[#a7a7a7]'>Ed Sheeran</span>
+            <div className='flex flex-col mx-4  cursor-pointer'>
+              <span className='text-sm font-sptitle text-white'>
+                Photograph
+              </span>
+              <span className='text-xs  translate-y-[0.5px] font-sptitle text-[#a7a7a7]'>
+                Ed Sheeran
+              </span>
             </div>
             <button
               onClick={() => {
@@ -71,7 +75,7 @@ function BottomPlayer() {
             </button>
           </div>
           {/* playerdiv */}
-          <div className='w-[40%] max-w-[722px]'>
+          <div className='w-[40%] max-w-[722px] -translate-x-2'>
             <div className='flex flex-col justify-center items-center'>
               <div className='flex flex-row flex-nowrap w-full gap-4 mb-2'>
                 <div className='flex flex-row justify-end flex-1 gap-2 size-[32px]'>
@@ -111,14 +115,14 @@ function BottomPlayer() {
               <Slider />
             </div>
           </div>
-          <div className='min-w-[180px] width-[30%] flex flex-row justify-end '>
+          <div className='min-w-[180px] w-[30%] flex flex-row justify-end '>
             <div className='flex flex-grow justify-end items-center'>
               <TwoStateButton Icon={NowPlayingIcon} />
               <TwoStateButton Icon={LyricsIcon} />
               <TwoStateButton Icon={QueueIcon} />
               <TwoStateButton Icon={DeviceIcon} />
-              <div className='mr-2 relative items-center flex flex-shrink w-[125px]'>
-                <TwoStateButton Icon={VolumeIcon} />
+              <div className='mr-2 space-x-2 relative items-center flex flex-shrink w-[125px]'>
+                <TwoStateButton className='translate-x-1' Icon={VolumeIcon} />
                 <VolumeSlider />
               </div>
               <TwoStateButton Icon={MinimizeIcon} />

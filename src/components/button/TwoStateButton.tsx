@@ -1,11 +1,13 @@
 'use client';
+import { cn } from '@/lib/utils';
 import { FC, SVGProps, useState } from 'react';
 
 interface TwoStateButtonProps {
   Icon: FC<SVGProps<SVGSVGElement>>;
+  className?: string;
 }
 
-const TwoStateButton: FC<TwoStateButtonProps> = ({ Icon }) => {
+const TwoStateButton: FC<TwoStateButtonProps> = ({ Icon, className }) => {
   const [currentState, setCurrentState] = useState(true);
 
   const handleClick = () => {
@@ -14,7 +16,10 @@ const TwoStateButton: FC<TwoStateButtonProps> = ({ Icon }) => {
   return (
     <button
       onClick={handleClick}
-      className='group flex size-[32px] justify-center items-center cursor-pointer relative '
+      className={cn(
+        className,
+        'group flex size-[32px] justify-center items-center cursor-pointer relative'
+      )}
     >
       {currentState ? (
         <Icon
