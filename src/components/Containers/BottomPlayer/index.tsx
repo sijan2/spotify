@@ -67,7 +67,7 @@ function BottomPlayer() {
                 />
               ) : (
                 <HeartIconSolid
-                  className='hover:scale-105 hover:fill-[#1ed760] fill-[#1ed760] '
+                  className='hover:scale-105 hover:fill-[#1ed760] fill-[#1ed760]'
                   width={16}
                   height={16}
                 />
